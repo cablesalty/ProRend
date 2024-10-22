@@ -5,6 +5,7 @@
 
 body {
     font-family: sans-serif;
+    background-color: black;
 }
 
 header {
@@ -17,10 +18,14 @@ main {
     background-color: #323232;
     color: white;
     padding: 30px;
+    padding-bottom: 50px;
 }
 
 footer {
-
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
 table {
@@ -44,4 +49,24 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+h1, nav {
+    display: inline-block;
+}
+
+.btn-container {
+    float: right;
+}
+
+.btn-container a {
+    background-color: #00ff00;
+    color: black;
+    padding: 10px;
+    border-radius: 20px;
+    transition-duration: 250ms;
+}
+
+.btn-container a:hover {
+    background-color: #00dd00;
 }

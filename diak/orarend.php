@@ -50,8 +50,11 @@ foreach ($rows as $row) {
 <body>
     <header>
         <h1>
-            <span style="color: #4aa1b1">Pro</span><span style="color: #8f5dff">Rend</span>
+            <span style="color: #383060">Pro</span><span style="color: #6052a5">Rend</span>
         </h1>
+        <nav>
+            <a href="">Kijelentkezés</a>
+        </nav>
     </header>
     <main>
         <table>
@@ -91,10 +94,22 @@ foreach ($rows as $row) {
                 }
                 ?>
             </tbody>
+
         </table>
+        <br>
+        <br>
+        <div class="btn-container">
+            <a href="uj_ora.php">Új óra</a>
+            <a href="uj_ora.php">Változtatás</a>
+        </div>
     </main>
     <footer>
-
+        <h1>ProRend</h1>
+        <p>a cablesalty production.</p>
+        <br>
+        <a href="">License</a> |
+        <a href="">Project Repository</a> |
+        <a href=""></a>
     </footer>
 </body>
 </html>
