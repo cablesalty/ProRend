@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+main {
+    background-color: #323232;
+    color: white;
+    padding: 30px;
+}
+
+footer {
+
+}
+
+table {
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid white;
+    padding: 10px;
+    color: white;
+}
+
+td {
+    color: #aaaaaa;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
