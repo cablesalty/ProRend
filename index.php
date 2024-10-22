@@ -1,3 +1,12 @@
+<?php
+session_start();
+
+if (isset($_SESSION['username'])) {
+    header('Location: /diak/orarend.php');
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="hu">
 <head>
@@ -8,7 +17,7 @@
 </head>
 <body>
     <main>
-        <form action="" method="post" autocomplete="off">
+        <form action="login.php" method="post" autocomplete="off">
             <h1>ProRend</h1>
             <input type="text" name="username" id="username" placeholder="Felhasználónév"><br>
             <input type="password" name="password" id="password" placeholder="Jelszó"><br>
