@@ -28,18 +28,8 @@ footer {
     text-align: center;
 }
 
-table {
-    width: 100%;
-}
-
-table, th, td {
-    border: 1px solid white;
-    padding: 10px;
-    color: white;
-}
-
-td {
-    color: #aaaaaa;
+header h1, nav {
+    display: inline-block;
 }
 
 a {
@@ -51,22 +41,10 @@ a:hover {
     text-decoration: underline;
 }
 
-header h1, nav {
-    display: inline-block;
+.subject {
+    font-size: 60px;
 }
 
-.btn-container {
-    float: right;
-}
-
-.btn-container a {
-    background-color: #00ff00;
-    color: black;
-    padding: 10px;
-    border-radius: 20px;
-    transition-duration: 250ms;
-}
-
-.btn-container a:hover {
-    background-color: #00dd00;
+.underline {
+    text-decoration: underline dotted;
 }

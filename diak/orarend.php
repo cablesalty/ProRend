@@ -53,7 +53,7 @@ foreach ($rows as $row) {
             <span style="color: #383060">Pro</span><span style="color: #6052a5">Rend</span>
         </h1>
         <nav>
-            <a href="">Kijelentkezés</a>
+            <a href="/logout.php">Kijelentkezés</a>
         </nav>
     </header>
     <main>
@@ -99,8 +99,8 @@ foreach ($rows as $row) {
         <br>
         <br>
         <div class="btn-container">
-            <a href="uj_ora.php">Új óra</a>
-            <a href="uj_ora.php">Változtatás</a>
+            <a href="">Új óra</a>
+            <a href="">Változtatás</a>
         </div>
     </main>
     <footer>
