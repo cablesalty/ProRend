@@ -1,2 +1,2 @@
 # ProRend
-Órarend alkalmazás. (Programozás HF)
+Órarend alkalmazás. *(Programozás Házi Feladat)*
