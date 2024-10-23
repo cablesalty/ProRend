@@ -45,7 +45,27 @@ if (!$result) {
         <?php foreach ($result as $data): ?>
             <h1 class="subject"><?php echo $data["subject"]; ?></h1>
             <h2>Terem: <span class="underline"><?php echo $data["room"]; ?></span></h2>
-            <h2>Tanár: <span class="underline"><?php echo $data["teacher"] ?></span></h2>
+            <h2>Tanár: <span class="underline"><?php echo $data["teacher"]; ?></span></h2>
+            <br>
+            <p>Adatbázis ID: <?php echo $data["id"]; ?></p>
+
+            <br>
+            <br>
+            <h1>Óra változtatása</h1>
+            <form action="valtoztatas.php" method="post" autocomplete="off">
+                <label for="teacher">Tanár:</label><br>
+                <input type="text" name="teacher" id="teacher" value="<?php echo $data["teacher"]; ?>" required><br>
+
+                <br>
+
+                <label for="room">Terem:</label><br>
+                <input type="text" name="room" id="room" value="<?php echo $data["room"]; ?>" required><br>
+
+                <br>
+
+                <input type="number" name="id" id="id" required hidden="hidden" style="display: none" value="<?php echo $data["id"]; ?>">
+                <input type="submit" value="Mentés">
+            </form>
         <?php endforeach; ?>
     </main>
 

@@ -99,8 +99,6 @@ foreach ($rows as $row) {
         <br>
         <br>
         <div class="btn-container">
-            <a href="">Új óra</a>
-            <a href="">Változtatás</a>
         </div>
     </main>
     <footer>

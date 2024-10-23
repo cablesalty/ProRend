@@ -48,3 +48,30 @@ a:hover {
 .underline {
     text-decoration: underline dotted;
 }
+
+label {
+    font-size: large;
+}
+
+input[type="text"] {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border:none;
+    font-size: large;
+    padding:10px;
+    border-radius: 20px;
+    width: 300px;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    font-size: large;
+    border: none;
+    border-radius: 20px;
+    background-color: #00ff00;
+}
+
+input[type="submit"]:hover {
+    background-color: #00dd00;
+    cursor: pointer;
+}
