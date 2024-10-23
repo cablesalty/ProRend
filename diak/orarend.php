@@ -77,17 +77,26 @@ foreach ($rows as $row) {
 
                     // és 5 nap hétfőtő péntekig
                     for ($day = 1; $day <= 5; $day++) {
-                        echo "<td>";
 
                         if (isset($groupedByClassTime[$class_time][$day])) {
                             foreach ($groupedByClassTime[$class_time][$day] as $item) {
-                                echo "<a href='megtekintes.php?id=" . $item->id . "'>" . $item->subject . "</a><br>";
+
+                                if ($item->status == "cancelled") {
+                                    echo "<td id='$item->id' class='cancelled'>";
+                                    echo "<a href='megtekintes.php?id=" . $item->id . "'>" . "<strong>ELMARAD</strong> " . $item->subject . "</a><br>";
+                                    echo "</td>";
+                                } else {
+                                    echo "<td id='$item->id'>";
+                                    echo "<a href='megtekintes.php?id=" . $item->id . "'>" . $item->subject . "</a><br>";
+                                    echo "</td>";
+                                }
+
+
+
                             }
                         } else {
-                            echo "[nincs óra]";
+                            echo "<td>[nincs óra]</td>";
                         }
-
-                        echo "</td>";
                     }
 
                     echo "</tr>";
@@ -105,9 +114,8 @@ foreach ($rows as $row) {
         <h1>ProRend</h1>
         <p>a cablesalty production.</p>
         <br>
-        <a href="">License</a> |
-        <a href="">Project Repository</a> |
-        <a href=""></a>
+        <a href="https://github.com/cablesalty/ProRend/blob/main/LICENSE" target="_blank">License</a> |
+        <a href="https://github.com/cablesalty/ProRend" target="_blank">Project Repository</a>
     </footer>
 </body>
 </html>

@@ -70,3 +70,7 @@ header h1, nav {
 .btn-container a:hover {
     background-color: #00dd00;
 }
+
+.cancelled {
+    background-color: #a31111;
+}

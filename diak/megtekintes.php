@@ -43,7 +43,11 @@ if (!$result) {
 
     <main>
         <?php foreach ($result as $data): ?>
-            <h1 class="subject"><?php echo $data["subject"]; ?></h1>
+            <?php if ($data["status"] == "cancelled"): ?>
+                <h1 class="subject"><span style="color: red;">ELMARAD</span> <?php echo $data["subject"]; ?></h1>
+            <?php else: ?>
+                <h1 class="subject"><?php echo $data["subject"]; ?></h1>
+            <?php endif; ?>
             <h2>Terem: <span class="underline"><?php echo $data["room"]; ?></span></h2>
             <h2>Tanár: <span class="underline"><?php echo $data["teacher"]; ?></span></h2>
             <br>
@@ -60,6 +64,14 @@ if (!$result) {
 
                 <label for="room">Terem:</label><br>
                 <input type="text" name="room" id="room" value="<?php echo $data["room"]; ?>" required><br>
+
+                <br>
+
+                <label for="status">Óra megjelölése:</label><br>
+                <select id="status" name="status">
+                    <option value="normal">Az óra meg lesz tartva</option>
+                    <option value="cancelled">Az óra elmarad</option>
+                </select><br>
 
                 <br>
 
